@@ -48,7 +48,7 @@ router.get('/shops/:shopId', async (req, res) => {
 });
 
 // 상품 정보 수정
-router.patch('/shops/:shopId', async (req, res) => {
+router.put('/shops/:shopId', async (req, res) => {
     const { shopId } = req.params;
 
     const { title, content, status, password } = req.body
